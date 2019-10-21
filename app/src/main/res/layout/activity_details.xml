@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/NoActionBar">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#0048FF"
+                android:gravity="center_vertical"
+                android:text="@string/name"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/alread_bookmark_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ic_favorite_24px"
+                android:text="@string/bookmarked"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/txtStargazers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#0048FF"
+                android:gravity="center_vertical"
+                android:text="@string/stargazers_count"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bookmark_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:onClick="addToBookmark"
+                android:text="@string/add_to_bookmarks"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/remove_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:onClick="removeBookmark"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:text="@string/remove_bookmark" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GitHub_Repo_Lister</string>
+    <string name="name">Name</string>
+    <string name="stargazers_count">stargazers_count</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_bookmarks">Add To Bookmarks</string>
+    <string name="bookmarked">bookmarked</string>
+    <string name="remove_bookmark">Remove Bookmark</string>
+    <string name="nametxt">Name:</string>
+    <string name="stargazers_counttxt">Stargazers Count:</string>
+</resources>
